@@ -2,23 +2,46 @@
 @import url("https://fonts.googleapis.com/css2? family= Krona+One & família= Montserrat &family= Open+Sans:wght@300;400;500;700 & display=swap");
 @import url("https://fonts.googleapis.com/css2? family= Krona+One & família= Montserrat:wght@400;600 &family= Open+Sans:wght@300;400;500;700 & display=swap");
 
+:root {
+  --cor-primaria: #2c3639;
+  --cor-secundaria: #dcd7c9;
+  --cor-terciaria: #a27b5c;
+  --cor-hover: #3f4e4f;
+
+  --font-primaria: "Krona One", sans-serif;
+  --font-secundaria: "montserrat", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  height: 100vh;
   box-sizing: border-box;
-  background-color: #000000;
-  color: #f6f6f6;
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+}
+.header {
+  padding: 2% 0 0 15%;
+}
+.header__navbar {
+  display: flex;
+  gap: 80px;
+}
+.header__navbar__link {
+  text-decoration: none;
+  font-family: var(--font-secundaria);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--cor-terciaria);
 }
 
 .apresentacao {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 10% 15%;
+  padding: 5% 15%;
 }
 .apresentacao_conteudo {
   max-width: 615px;
@@ -28,14 +51,14 @@ body {
 }
 .apresentacao_conteudo_titulo {
   font-size: 36px;
-  font-family: "Krona One", sans-serif;
+  font-family: var(--font-primaria);
 }
 .apresentacao_conteudo_texto {
   font-size: 24px;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-secundaria);
 }
 .titulo-destaque {
-  color: #22d4fd;
+  color: var(--cor-terciaria);
 }
 .apresentacao {
   display: flex;
@@ -51,7 +74,7 @@ body {
   gap: 32px;
 }
 .apresentacao_links_subtitulo {
-  font-family: "Krona One", sans-serif;
+  font-family: var(--font-primaria);
   font-weight: 400;
   font-size: 24px;
 }
@@ -65,14 +88,23 @@ body {
   width: 380px;
   font-weight: 600;
   text-align: center;
-  border: solid #22d4fd 1px;
+  border: solid var(--cor-terciaria) 1px;
   border-radius: 8px;
   padding: 21.5px 0;
-  color: #f6f6f6;
-  font-family: "montserrat", sans-serif;
+  color: var(--cor-secundaria);
+  font-family: var(--font-secundaria);
 }
 .apresentacao_links_btn:hover {
-  background-color: #272727;
+  background-color: var(--cor-hover);
 }
-
 /* FINAL BOTÕES COM LINKS */
+
+.footer {
+  background-color: var(--cor-terciaria);
+  color: var(--cor-primaria);
+  padding: 24px;
+  text-align: center;
+  font-size: 24px;
+  font-family: var(--font-secundaria);
+  font-weight: 400;
+}
