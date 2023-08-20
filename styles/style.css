@@ -3,11 +3,12 @@
 @import url("https://fonts.googleapis.com/css2? family= Krona+One & família= Montserrat:wght@400;600 &family= Open+Sans:wght@300;400;500;700 & display=swap");
 
 :root {
+  /* VARIAVEIS GLOBAIS DAS CORES */
   --cor-primaria: #2c3639;
   --cor-secundaria: #dcd7c9;
   --cor-terciaria: #a27b5c;
   --cor-hover: #3f4e4f;
-
+  /* VARIAVEIS GLOBAIS DAS FONTS */
   --font-primaria: "Krona One", sans-serif;
   --font-secundaria: "montserrat", sans-serif;
 }
@@ -22,6 +23,7 @@ body {
   background-color: var(--cor-primaria);
   color: var(--cor-secundaria);
 }
+/* MENU PRINCIPAL */
 .header {
   padding: 2% 0 0 15%;
 }
@@ -32,11 +34,13 @@ body {
 .header__navbar__link {
   text-decoration: none;
   font-family: var(--font-secundaria);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
   color: var(--cor-terciaria);
 }
+/* FINAL DO MENU PRINCIPAL */
 
+/* CONTEUDO DA PAGINA COM TITULOS */
 .apresentacao {
   display: flex;
   align-items: center;
@@ -44,17 +48,17 @@ body {
   padding: 5% 15%;
 }
 .apresentacao_conteudo {
-  max-width: 615px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 .apresentacao_conteudo_titulo {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-family: var(--font-primaria);
 }
 .apresentacao_conteudo_texto {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: var(--font-secundaria);
 }
 .titulo-destaque {
@@ -63,7 +67,9 @@ body {
 .apresentacao {
   display: flex;
   align-items: center;
+  gap: 82px;
 }
+/* FINAL DO CONTEUDO */
 
 /* BOTÕES COM LINKS */
 .apresentacao_links {
@@ -76,16 +82,15 @@ body {
 .apresentacao_links_subtitulo {
   font-family: var(--font-primaria);
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .apresentacao_links_btn {
   display: flex;
   justify-content: center;
   gap: 16px;
   text-decoration: none;
-  font-size: 24px;
-  /* background-color: #22d4fd; */
-  width: 380px;
+  font-size: 1.5rem;
+  width: 50%;
   font-weight: 600;
   text-align: center;
   border: solid var(--cor-terciaria) 1px;
@@ -99,12 +104,16 @@ body {
 }
 /* FINAL BOTÕES COM LINKS */
 
+.apresentacao__imagem {
+  width: 50%;
+}
+
 .footer {
   background-color: var(--cor-terciaria);
   color: var(--cor-primaria);
   padding: 24px;
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: var(--font-secundaria);
   font-weight: 400;
 }
